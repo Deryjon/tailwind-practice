@@ -4,11 +4,67 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="src/assets/tailwind.css" />
-		<link rel="stylesheet" href="src/assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="src/assets/tailwind.css" />
+    <link rel="stylesheet" href="src/assets/fonts/fonts.css" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body class="bg-[#1E1E1E]">
+    <section class="hero">
+      <header class="header">
+        <div class="container mx-auto max-w-7xl p-10">
+          <nav class="navbar flex justify-between">
+            <div class="icon">
+              <img
+                class="w-[48] h-[48]"
+                src="/src/assets/images/main-icon.svg"
+                alt=""
+              />
+            </div>
+            <ul class="menu flex gap-12">
+              <!-- item -->
+              <li class="menu-item text-white text-base font-semibold p-3">
+                <a href="" class="item-link">Home</a>
+              </li>
+
+              <!-- item -->
+              <li class="menu-item text-white text-base font-semibold p-3">
+                <a href="" class="item-link">Cars</a>
+              </li>
+
+              <!-- item -->
+              <li class="menu-item text-white text-base font-semibold p-3">
+                <a href="" class="item-link">Book now</a>
+              </li>
+
+              <!-- item -->
+              <li class="menu-item text-white text-base font-semibold p-3">
+                <a href="" class="item-link">Terms and Conditions</a>
+              </li>
+            </ul>
+            <button class="btn py-3 px-6 bg-brand text-white">
+              Manage Booking
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container mx-auto max-w-7xl p-10">
+        <div class="wrapper">
+          <div class="left">
+            <h1
+              class="title text-white font-bold text-5xl w-96 tracking-normal mt-24"
+            >
+              The World's Best Luxury Car Deals
+            </h1>
+						<p class="text font-normal w-96 mt-5 text-white text-base	">HKinvestor can provide rentals of the most exclusive cars like Ferrari and Lamborghini.</p>
+          <div class="btns flex mt-10 gap-10 " >
+						<button class="btn btn py-3 px-6 bg-brand text-white mt-15">Buy Now</button>
+						<button class="btn py-3 px-6 bg-transparent text-white mt-15 border-orange-600">Video Introduction</button>
+					</div>
+					</div>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="/main.js"></script>
   </body>
