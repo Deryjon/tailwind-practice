@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/assets/tailwind.css" />
     <link rel="stylesheet" href="src/assets/fonts/fonts.css" />
+		<!-- font awesome -->
+			 <link
+			 rel="stylesheet"
+			 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+			 integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+			 crossorigin="anonymous"
+			 referrerpolicy="no-referrer"
+		 />
     <title>Vite App</title>
   </head>
   <body class="bg-[#1E1E1E]">
@@ -22,26 +30,26 @@
             </div>
             <ul class="menu flex gap-12">
               <!-- item -->
-              <li class="menu-item text-white text-base font-semibold p-3">
+              <li class="menu-item text-white  text-base font-semibold p-3 transition-colors hover:text-brand">
                 <a href="" class="item-link">Home</a>
               </li>
 
               <!-- item -->
-              <li class="menu-item text-white text-base font-semibold p-3">
+              <li class="menu-item text-white text-base font-semibold p-3 transition-colors hover:text-brand">
                 <a href="" class="item-link">Cars</a>
               </li>
 
               <!-- item -->
-              <li class="menu-item text-white text-base font-semibold p-3">
+              <li class="menu-item text-white text-base font-semibold p-3 transition-colors hover:text-brand">
                 <a href="" class="item-link">Book now</a>
               </li>
 
               <!-- item -->
-              <li class="menu-item text-white text-base font-semibold p-3">
+              <li class="menu-item text-white text-base font-semibold p-3 transition-colors hover:text-brand">
                 <a href="" class="item-link">Terms and Conditions</a>
               </li>
             </ul>
-            <button class="btn py-3 px-6 bg-brand text-white">
+            <button class="btn py-3 px-6 bg-brand text-white transition-colors hover:bg-orange-500">
               Manage Booking
             </button>
           </nav>
@@ -136,24 +144,107 @@
 				<h2 class="text-white font-bold text-5xl mb-10">Our Other Services</h2>
 				<div class="wrapper flex flex-wrap justify-between">
 					<!-- card -->
-					<div class="card w-80">
+					<div class="card w-96">
 						<img class="" src="src/assets/images/sevice-1.jpg" alt="">
 						<h3 class="title text-2xl text-white mt-3 font-bold">Private Charter</h3>
 						<p class="text text-1xl text-white mt-3 font-normal">Pinjam Mobil Rent also offers you discreet and speedy, transfers via helicopter or private planes.</p>
 					</div>
 					<!-- card -->
-					<div class="card w-80">
+					<div class="card w-96">
 						<img class="" src="src/assets/images/service-2.jpg" alt="">
 						<h3 class="title text-2xl text-white mt-3 font-bold">Chauffer Driven Car Rentals</h3>
 						<p class="text text-1xl text-white mt-3 font-normal">Our chauffers are professional drivers who provide a discreet, reliable punctual and professional service.</p>
 					</div>
 					<!-- card -->
-					<div class="card w-80">
+					<div class="card w-96">
 						<img class="" src="src/assets/images/service-3.jpg" alt="">
 						<h3 class="title text-2xl text-white mt-3 font-bold">Wedding Car Rentals</h3>
 						<p class="text text-1xl text-white mt-3 font-normal">If you want to celebrate your wedding in style and elegance, choose one car from our luxury collection.</p>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="popular ">
+			<div class="container mx-auto max-w-7xl p-10">
+				<h2 class="text-white font-bold text-5xl mb-10">Popular Destination for Car Rentals</h2>
+				<div class="wrapper flex justify-between flex-wrap gap-1">
+					<!-- card -->
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/london.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">London</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 669,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in London</p>
+					</div>
+					</div>
+					<!-- card -->
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/madrid.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">Madrid</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 799,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in Madrid</p>
+					</div>
+					</div>
+					<!-- card -->
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/paris.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">Paris</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 899,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in Paris</p>
+					</div>
+					</div>
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/dubai.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">Dubai</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 669,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in Dubai</p>
+					</div>
+					</div>
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/roma.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">Roma</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 799,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in Roma</p>
+					</div>
+					</div>
+					<div class="card w-96 bg-[#171717]">
+						<img class="" src="src/assets/images/jakarta.jpg" alt="">
+						<div class="bottom p-5">
+						<h3 class="title text-2xl text-white mt-3 font-bold">Jakarta</h3>
+						<p class="text text-1xl text-white mt-3 font-thin">Car hire in 75 pick-up locations</p>
+						<div class="icon mt-4 flex gap-4">
+							<i class="fas fa-car pointer-events-none text-white mt-1 "></i>
+							<p class="text text-white ">From $ 899,00 per day</p>
+						</div>
+						<p class="mt-3 text-brand">Search rental cars in Jakarta</p>
+					</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
     <script type="module" src="/main.js"></script>
